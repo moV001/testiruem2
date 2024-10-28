@@ -1,3 +1,22 @@
+/* styles.css */
+
+html {
+    background-image: url('http://surl.li/njjlal');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    html {
+        background-image: url('path/to/your-image-mobile.jpg');
+    }
+}
+
 .center-container {
     display: flex;
     justify-content: center;
@@ -17,7 +36,7 @@
 .white-button {
     background-color: white;
     border: none;
-    width:280px;
+    width: 280px;
     height: 100px;
     cursor: pointer;
 }
@@ -26,7 +45,7 @@
     background-color: blue;
     color: white;
     border: none;
-    width:280px;
+    width: 280px;
     height: 100px;
     cursor: pointer;
 }
@@ -35,7 +54,7 @@
     background-color: red;
     color: white;
     border: none;
-    width:280px;
+    width: 280px;
     height: 100px;
     cursor: pointer;
 }
@@ -44,10 +63,11 @@
     background-color: gray;
     color: white;
     border: none;
-    width: 100px;
-    height: 30px;
+    width: 800px;
+    height: 50px;
     cursor: pointer;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    bottom: 10px; /* Переместить кнопку в самый низ */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust the position to center it perfectly */
 }
